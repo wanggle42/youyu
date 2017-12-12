@@ -5,8 +5,14 @@
 + propsMap -> Map -> (道具个数)
   + key:String
   + value:Integer
-+ giftList -> List<>
-  + ​
++ giftList -> `List<Map<String,Object>>` (桌面奖品信息)
+  + |         key         | value |
+    | :-----------------: | :---: |
+    |       awardId       |  int  |
+    |      position       |  int  |
+    |  needGoldCoinCount  |  int  |
+    | hadPayGoldCoinCount |  int  |
+    |                     |       |
 
 
 
