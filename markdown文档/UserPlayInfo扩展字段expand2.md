@@ -4,20 +4,17 @@
 
 + `firstSignin`    →  boolean    →  (签到标志位)
 
-+ `propsMap`   →  `Map<String,Map<String, Integer>>`  →  (道具信息)
++ `propsMap`   →  `Map<String,Integer>`  →  (道具信息)
 
   + **key**  →  道具ID
 
-  + **value**   →  `Map<String, Integer>`
+  + **value**   →  道具数量
 
-    + key:String  → 道具名称  
-    + value:Integer  → 道具数量
-
-  + |    名称     |  描述  | 初始值  |
-    | :-------: | :--: | :--: |
-    | shakeTool | 摇动道具 |  0   |
-    | pushTool  | 伸长道具 |  0   |
-    |           |      |      |
+  + | 道具ID |  描述  | 道具数量 |
+    | :--: | :--: | :--: |
+    |  1   | 摇动道具 |  0   |
+    |  2   | 伸长道具 |  0   |
+    |      |      |      |
 
 
 
