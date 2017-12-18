@@ -24,7 +24,7 @@
 
     + |         key         | value |     描述     |
       | :-----------------: | :---: | :--------: |
-      |       awardId       |  int  |    奖品id    |
+      |       awardId       |  int  |    奖项id    |
       |      position       |  int  |    奖品位置    |
       |  needGoldCoinCount  |  int  | 获取奖品需要的金币数 |
       | hadPayGoldCoinCount |  int  | 为奖品已花费的金币数 |
@@ -32,4 +32,23 @@
 
 
 
+
+```json
+ {
+   "currentGoldCoinNumber": 100,  //用户
+        "signinCoin": 0,
+   		"totalSigninCoin": 100,
+        "propsMap": {
+            "1": 1,
+            "2": 0
+        },
+        "gifts": {
+            "award_0": {
+                "awardId": 65506,
+                "needGoldCoinCount": 1000,
+                "hadPayGoldCoinCount": 100
+            }
+        }
+}
+```
 
