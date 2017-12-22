@@ -48,7 +48,36 @@
                 "needGoldCoinCount": 1000,
                 "hadPayGoldCoinCount": 100
             }
-        }
+        },
+   		"security":{
+  			"isInBlackList":false,
+          	"time":"2017-12-22",
+          	"dateDropCoinTotal":10,
+          	"dateRecycleCoinTotal":2
+          	
+		},
+   		"ruleRuntimeInfo":{
+          	"requestTimeTotal":9,
+  			"rule0":{"exceptionTime":1},
+          	"rule1":{"exceptionTime":0},
+            "rule2":{"exceptionTime":0},
+            "rule3":{"exceptionTime":0}
+		}
 }
 ```
 
+|          key           |     value     |        含义        |
+| :--------------------: | :-----------: | :--------------: |
+|    `isInBlackList`     | true \| false |      是否被拉黑       |
+|         `time`         |     Date      | 被拉黑的日期，**前端不可见** |
+|  `dateDropCoinTotal`   |      int      |    每日累加掉落的金币数    |
+| `dateRecycleCoinTotal` |      int      | 每日金币掉落后返还给用户的累加值 |
+
+
+
+**备注** ：
+
+`dateDropCoinTotal` 和 `dateRecycleCoinTotal`
+
++ 发生一次异常时清零
++ 每次首次登录清零
